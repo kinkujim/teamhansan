@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>팀 한산 멤버 모집</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      border-bottom: 1px solid #ccc;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    input, textarea, select {
+      width: 100%;
+      margin: 10px 0 20px;
+      padding: 8px;
+    }
+    label {
+      font-weight: bold;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. 프로젝트 소개 -->
+  <section id="intro">
+    <h2>프로젝트 소개</h2>
+    <p id="project-description">여기에 프로젝트 소개글 1000자 정도가 들어갑니다. (이 부분은 나중에 채워도 돼)</p>
+    <video width="100%" controls>
+      <source src="team_video.mp4" type="video/mp4">
+      브라우저가 비디오를 지원하지 않습니다.
+    </video>
+    <h3>한산도 지도</h3>
+    <img src="hansando_map.jpg" alt="한산도 지도" width="100%">
+  </section>
+
+  <!-- 2. 지원 신청 정보 -->
+  <section id="apply">
+    <h2>지원 신청</h2>
+    <form id="application-form" action="https://formspree.io/f/your-form-id" method="POST" enctype="multipart/form-data">
+      <label for="name">이름</label>
+      <input type="text" id="name" name="이름" required />
+
+      <label for="contact">연락처</label>
+      <input type="text" id="contact" name="연락처" required />
+
+      <label for="email">이메일</label>
+      <input type="email" id="email" name="이메일" required />
+
+      <label for="location">거주지 (시, 동까지)</label>
+      <input type="text" id="location" name="거주지" required />
+
+      <label for="reason">지원 계기</label>
+      <textarea id="reason" name="지원계기" rows="4" required></textarea>
+
+      <label for="portfolio">포트폴리오 (PDF 파일 업로드)</label>
+      <input type="file" id="portfolio" name="포트폴리오" accept=".pdf" required />
+
+      <button type="submit">제출하기</button>
+    </form>
+  </section>
+
+  <!-- 3. 필수 확인 사항 -->
+  <section id="confirm">
+    <h2>필수 확인 사항</h2>
+    <ol>
+      <li>이 프로젝트의 멤버는 2025년 5~6월 중 2박 3일간 한산도에 방문합니다. 구체적인 일정은 최종 멤버 선발 후 조율합니다. 선발 시 여행을 떠날 채비와 마음가짐을 준비하실 수 있나요?</li>
+      <li>결과물 전시를 위해 프로젝트 진행 시 사진 및 동영상 촬영, 녹음을 진행합니다. 전시를 위한 초상권과 자료 제공에 동의하시나요?</li>
+    </ol>
+  </section>
+
+</body>
+</html>
